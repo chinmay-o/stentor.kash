@@ -187,6 +187,66 @@ body {
   display: none;
 }
 
+.success-message-enquiry {
+
+  display: none;
+}
+
+.error-message-enquiry {
+
+  display: none;
+}
+
+.success-message-freelance {
+
+  display: none;
+}
+
+.error-message-freelance {
+
+  display: none;
+}
+
+.success-message-member {
+
+  display: none;
+}
+
+.error-message-member {
+
+  display: none;
+}
+
+.success-message-payment {
+
+  display: none;
+}
+
+.error-message-payment {
+
+  display: none;
+}
+
+.success-message-promo {
+
+  display: none;
+}
+
+.error-message-promo {
+
+  display: none;
+}
+
+.success-message-salary {
+
+  display: none;
+}
+
+.error-message-salary {
+
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
 
   .section-row {

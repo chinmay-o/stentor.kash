@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/preloader.css">
+    <script src="https://use.fontawesome.com/be05aa4937.js"></script>
+
   </head>
   <body>
 
@@ -181,22 +183,26 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form id="">
+            <form id="salaryForm">
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Employee</label>
-                <select name="Quantity" class="form-select" required>
+                <select name="Name" class="form-select" required>
                   <option selected>Choose...</option>
-                  <option>Employee</option>
+                  <option>Akhil</option>
+                  <option>Neeraj</option>
+                  <option>Sebin</option>
+                  <option>Shynu</option>
+                  <option>Dijil</option>
                 </select>
               </div>
               <label for="inputState" class="form-label">Amount</label>
               <div class="mb-3 input-group">
                 <div class="input-group-text">₹</div>
-                <input type="text" class="input-gray form-control" name="Price" placeholder="Amount" required>
+                <input type="text" class="input-gray form-control" name="Amount" placeholder="Amount" required>
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Payment Mode</label>
-                <select name="Quantity" class="form-select" required>
+                <select name="Payment Mode" class="form-select" required>
                   <option selected>Choose...</option>
                   <option>Online</option>
                   <option>Cash</option>
@@ -204,11 +210,11 @@
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Remarks</label>
-                <input type="text" class="input-gray form-control" name="Mobile" placeholder="More Details">
+                <input type="text" class="input-gray form-control" name="Remarks" placeholder="More Details">
               </div>
-              <div class="success-message-history"><i class="fa fa-check text-primary"></i>
+              <div class="success-message-salary"><i class="fa fa-check text-primary"></i>
                 Transaction successfully updated.</div>
-              <div class="error-message-history">We're sorry, but something went wrong</div>
+              <div class="error-message-salary">We're sorry, but something went wrong</div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" value="submit" class="btn-upper btn-yellow btn custom-submit">Submit</button>
@@ -228,17 +234,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form id="">
+            <form id="paymentForm">
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Client</label>
-                <select name="Quantity" class="form-select" required>
+                <select name="Name" class="form-select" required>
                   <option selected>Choose...</option>
                   <option>Client</option>
                 </select>
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Month</label>
-                <select name="Quantity" class="form-select" required>
+                <select name="Month" class="form-select" required>
                   <option selected>Choose...</option>
                   <option>Month</option>
                 </select>
@@ -246,11 +252,11 @@
               <label for="inputState" class="form-label">Amount</label>
               <div class="mb-3 input-group">
                 <div class="input-group-text">₹</div>
-                <input type="text" class="input-gray form-control" name="Price" placeholder="Amount" required>
+                <input type="text" class="input-gray form-control" name="Amount" placeholder="Amount" required>
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Payment Mode</label>
-                <select name="Quantity" class="form-select" required>
+                <select name="Payment Mode" class="form-select" required>
                   <option selected>Choose...</option>
                   <option>Online</option>
                   <option>Cash</option>
@@ -258,11 +264,11 @@
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Remarks</label>
-                <input type="text" class="input-gray form-control" name="Mobile" placeholder="More Details">
+                <input type="text" class="input-gray form-control" name="Remarks" placeholder="More Details">
               </div>
-              <div class="success-message-history"><i class="fa fa-check text-primary"></i>
+              <div class="success-message-payment"><i class="fa fa-check text-primary"></i>
                 Transaction successfully updated.</div>
-              <div class="error-message-history">We're sorry, but something went wrong</div>
+              <div class="error-message-payment">We're sorry, but something went wrong</div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" value="submit" class="btn-upper btn-yellow btn custom-submit">Submit</button>
@@ -282,10 +288,10 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form id="">
+            <form id="promoForm">
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Client</label>
-                <select name="Quantity" class="form-select" required>
+                <select name="Client" class="form-select" required>
                   <option selected>Choose...</option>
                   <option>Client</option>
                 </select>
@@ -293,15 +299,15 @@
               <label for="inputState" class="form-label">Amount</label>
               <div class="mb-3 input-group">
                 <div class="input-group-text">₹</div>
-                <input type="text" class="input-gray form-control" name="Price" placeholder="Amount" required>
+                <input type="text" class="input-gray form-control" name="Amount" placeholder="Amount" required>
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Remarks</label>
-                <input type="text" class="input-gray form-control" name="Mobile" placeholder="More Details">
+                <input type="text" class="input-gray form-control" name="Remarks" placeholder="More Details">
               </div>
-              <div class="success-message-history"><i class="fa fa-check text-primary"></i>
+              <div class="success-message-promo"><i class="fa fa-check text-primary"></i>
                 Transaction successfully updated.</div>
-              <div class="error-message-history">We're sorry, but something went wrong</div>
+              <div class="error-message-promo">We're sorry, but something went wrong</div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" value="submit" class="btn-upper btn-yellow btn custom-submit">Submit</button>
@@ -321,19 +327,19 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form id="">
+            <form id="freelanceForm">
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Name</label>
-                <input type="text" class="input-gray form-control" name="Mobile" placeholder="Name">
+                <input type="text" class="input-gray form-control" name="Name" placeholder="Name" required>
               </div>
               <label for="inputState" class="form-label">Amount</label>
               <div class="mb-3 input-group">
                 <div class="input-group-text">₹</div>
-                <input type="text" class="input-gray form-control" name="Price" placeholder="Amount" required>
+                <input type="text" class="input-gray form-control" name="Amount" placeholder="Amount" required>
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Payment Mode</label>
-                <select name="Quantity" class="form-select" required>
+                <select name="Payment Mode" class="form-select" required>
                   <option selected>Choose...</option>
                   <option>Online</option>
                   <option>Cash</option>
@@ -341,11 +347,11 @@
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Remarks</label>
-                <input type="text" class="input-gray form-control" name="Mobile" placeholder="More Details">
+                <input type="text" class="input-gray form-control" name="Remarks" placeholder="More Details">
               </div>
-              <div class="success-message-history"><i class="fa fa-check text-primary"></i>
+              <div class="success-message-freelance"><i class="fa fa-check text-primary"></i>
                 Transaction successfully updated.</div>
-              <div class="error-message-history">We're sorry, but something went wrong</div>
+              <div class="error-message-freelance">We're sorry, but something went wrong</div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" value="submit" class="btn-upper btn-yellow btn custom-submit">Submit</button>
@@ -365,26 +371,27 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form id="">
+            <form id="memberForm">
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Member Class</label>
-                <select name="Quantity" class="form-select" required>
+                <select name="Catagory" class="form-select" required>
                   <option selected>Choose...</option>
                   <option>Client</option>
                   <option>Employee</option>
+                  <option>Freelancer</option>
                 </select>
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Name</label>
-                <input type="text" class="input-gray form-control" name="Mobile" placeholder="Name">
+                <input type="text" class="input-gray form-control" name="Name" placeholder="Name" required>
               </div>
               <div class="mb-3 mt-3">
                 <label for="inputState" class="form-label">Number</label>
-                <input type="text" class="input-gray form-control" name="Mobile" placeholder="Mobile">
+                <input type="text" class="input-gray form-control" name="Mobile" placeholder="Mobile" required>
               </div>
-              <div class="success-message-history"><i class="fa fa-check text-primary"></i>
+              <div class="success-message-member"><i class="fa fa-check text-primary"></i>
                 Transaction successfully updated.</div>
-              <div class="error-message-history">We're sorry, but something went wrong</div>
+              <div class="error-message-member">We're sorry, but something went wrong</div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" value="submit" class="btn-upper btn-yellow btn custom-submit">Submit</button>
