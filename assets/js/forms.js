@@ -107,6 +107,25 @@ $("#memberForm").submit((e) => {
   })
 })
 
+$("#attendenceForm").submit((e) => {
+  e.preventDefault()
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbzXV8rh7-p5bzZpak4OjctM5tl0TlsmigSLfWWFg5U0Xbh21j0/exec",
+    data: $("#attendenceForm").serialize(),
+    type: "POST",
+    success: function(response) {
+      $(".success-message-attend").css("display", "block");
+      $('#attendenceForm')[0].reset();
+      fadeOut(".success-message-attend");
+    },
+    error: function(err) {
+      $(".error-message-attend").css("display", "block");
+      fadeOut(".error-message-attend");
+    }
+  })
+})
+
+
 function fadeOut(className) {
   setTimeout(function(){
     $(className).remove();

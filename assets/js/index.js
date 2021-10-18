@@ -46,7 +46,17 @@ function dataGet() {
     }
 
     index = true;
-  }, 3000);
+  }, 2000);
+}
+
+function attendencePut() {
+
+  document.getElementById("attendenceData").innerHTML = '<div class="mb-4 mt-2"><label for="inputState" class="form-label">Time</label><select name="Session" class="form-select" required><option selected>Choose...</option><option>Morning</option><option>Afternoon</option></select></div>';
+
+  for (var a = 1; a < employees.length; a++) {
+
+    document.getElementById("attendenceData").innerHTML += '<div class="mb-3 mt-3"><label for="inputState" class="form-label mx-3">'+ employees[a] +': </label><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="'+ employees[a] +'" value="Present"><label class="form-check-label" for="inlineRadio1">Present</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="Attendence" value="Absent"><label class="form-check-label" for="inlineRadio2">Absent</label></div></div>';
+  }
 }
 
 apiCall();
@@ -60,10 +70,16 @@ $('.close-button').click(function() {
   document.getElementById("employeeOption").innerHTML = '';
   document.getElementById("clientOptionOne").innerHTML = '';
   document.getElementById("clientOptionTwo").innerHTML = '';
+  document.getElementById("attendenceData").innerHTML = '';
 
   apiCall();
   dataGet();
   index = true;
+});
+
+$('#attendenceButton').click(function() {
+
+  attendencePut();
 });
 
 // document.getElementById("userbase").innerHTML

@@ -247,6 +247,16 @@ body {
   display: none;
 }
 
+.success-message-attend {
+
+  display: none;
+}
+
+.error-message-attend {
+
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
 
   .section-row {
