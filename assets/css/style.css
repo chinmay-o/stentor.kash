@@ -257,6 +257,11 @@ body {
   display: none;
 }
 
+.employeeRadio {
+
+  font-size: 18px;
+}
+
 @media screen and (max-width: 500px) {
 
   .section-row {

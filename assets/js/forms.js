@@ -9,10 +9,12 @@ $("#expense-form").submit((e) => {
       $(".success-message-expense").css("display", "block");
       $('#expense-form')[0].reset();
       fadeOut(".success-message-expense");
+      loadSpinner("none");
     },
     error: function(err) {
       $(".error-message-expense").css("display", "block");
       fadeOut(".error-message-expense");
+      loadSpinner("none");
     }
   })
 })
@@ -27,10 +29,12 @@ $("#salaryForm").submit((e) => {
       $(".success-message-salary").css("display", "block");
       $('#salaryForm')[0].reset();
       fadeOut(".success-message-salary");
+      loadSpinner("none");
     },
     error: function(err) {
       $(".error-message-salary").css("display", "block");
       fadeOut(".error-message-salary");
+      loadSpinner("none");
     }
   })
 })
@@ -45,10 +49,12 @@ $("#paymentForm").submit((e) => {
       $(".success-message-payment").css("display", "block");
       $('#paymentForm')[0].reset();
       fadeOut(".success-message-payment");
+      loadSpinner("none");
     },
     error: function(err) {
       $(".error-message-payment").css("display", "block");
       fadeOut(".error-message-payment");
+      loadSpinner("none");
     }
   })
 })
@@ -63,10 +69,12 @@ $("#promoForm").submit((e) => {
       $(".success-message-promo").css("display", "block");
       $('#promoForm')[0].reset();
       fadeOut(".success-message-promo");
+      loadSpinner("none");
     },
     error: function(err) {
       $(".error-message-promo").css("display", "block");
       fadeOut(".error-message-promo");
+      loadSpinner("none");
     }
   })
 })
@@ -81,10 +89,12 @@ $("#freelanceForm").submit((e) => {
       $(".success-message-freelance").css("display", "block");
       $('#freelanceForm')[0].reset();
       fadeOut(".success-message-freelance");
+      loadSpinner("none");
     },
     error: function(err) {
       $(".error-message-freelance").css("display", "block");
       fadeOut(".error-message-freelance");
+      loadSpinner("none");
     }
   })
 })
@@ -99,10 +109,12 @@ $("#memberForm").submit((e) => {
       $(".success-message-member").css("display", "block");
       $('#memberForm')[0].reset();
       fadeOut(".success-message-member");
+      loadSpinner("none");
     },
     error: function(err) {
       $(".error-message-member").css("display", "block");
       fadeOut(".error-message-member");
+      loadSpinner("none");
     }
   })
 })
@@ -117,14 +129,26 @@ $("#attendenceForm").submit((e) => {
       $(".success-message-attend").css("display", "block");
       $('#attendenceForm')[0].reset();
       fadeOut(".success-message-attend");
+      loadSpinner("none");
     },
     error: function(err) {
       $(".error-message-attend").css("display", "block");
       fadeOut(".error-message-attend");
+      loadSpinner("none");
     }
   })
 })
 
+$('.custom-submit').click(function() {
+
+  loadSpinner("block");
+});
+
+function loadSpinner(attribute) {
+
+  $(".cover-spin").css("display", attribute);
+  $(".loadingio-spinner-disk-sv1pyzh6et").css("display", attribute);
+}
 
 function fadeOut(className) {
   setTimeout(function(){

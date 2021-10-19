@@ -55,7 +55,7 @@ function attendencePut() {
 
   for (var a = 1; a < employees.length; a++) {
 
-    document.getElementById("attendenceData").innerHTML += '<div class="mb-3 mt-3"><label for="inputState" class="form-label mx-3">'+ employees[a] +': </label><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="'+ employees[a] +'" value="Present"><label class="form-check-label" for="inlineRadio1">Present</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="'+ employees[a] +'" value="Absent"><label class="form-check-label" for="inlineRadio2">Absent</label></div></div>';
+    document.getElementById("attendenceData").innerHTML += '<div class="mb-3 mt-3 employeeRadio"><label for="inputState" class="form-label mx-3">'+ employees[a] +': </label><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="'+ employees[a] +'" value="Present"><label class="form-check-label" for="inlineRadio1">Present</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="'+ employees[a] +'" value="Absent"><label class="form-check-label" for="inlineRadio2">Absent</label></div></div>';
   }
 }
 
